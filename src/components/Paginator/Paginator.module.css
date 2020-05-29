@@ -1,0 +1,14 @@
+.selectedPage{
+    font-weight: 600;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.paginationBlock{
+    display: flex;
+    margin: 9px;
+    padding: 10px;
+    border: 1px solid;
+    justify-content: space-around;
+}

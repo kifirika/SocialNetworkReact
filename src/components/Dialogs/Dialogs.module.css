@@ -1,0 +1,48 @@
+.dialogs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.dialogsItem , .messagesItem{
+    background-color: rgb(211, 209, 209);
+}
+.dialogsItem{
+    width: 200px;
+}
+.dialog{
+    padding: 20px;
+}
+.dialogs a{
+    display: block;
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+}
+.messagesItem{
+    width: 400px;
+}
+.message{
+    padding: 20px;
+}
+.messagesAreaPlusButton{
+    display: flex;
+    align-items: center;
+}
+.messagesAreaPlusButton textarea {
+    width: 290px;
+    padding: 10px;
+    margin: 20px 0px 20px 20px;
+}
+.messagesAreaPlusButton button {
+    margin-left: 10px;
+    background-color: hsla(203, 88%, 53%, 0.911);
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+}
+.messagesAreaPlusButton button:hover{
+    background-color: hsl(203, 88%, 53%);
+}
+.messagesAreaPlusButton button:focus{
+    outline: none;  
+}
