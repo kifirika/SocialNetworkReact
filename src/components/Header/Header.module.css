@@ -11,8 +11,7 @@
 }
 .loginBlock{
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    flex-direction: row-reverse;
     white-space: nowrap;
     line-height: 42px;
     height: 42px;
@@ -20,18 +19,26 @@
     padding: 0 10px;
     color: #fff;
     font-weight: 700;
-    width: 150px;
+    width: 930px;
+    margin: 0 auto;
+
     -webkit-font-smoothing: antialiased;
 }
 .loginButton {
     border-radius: 4px;
-    background-color: lightblue;
-    color:#2A58A1;
+    border: 1px solid #7ca6e0;
+    color: #2b518d;
     font-weight: 700;
-    
+    background-color: #7ca6e0;
+    padding: 5px;
+    width: 70px;
+    margin-left: 10px;
 }
 .miniAvaLoginBlock{
     padding: 3px;
     width: 35px;
     border-radius: 50%;
+}
+.avaLoginBlock{
+    margin-right: 10px;
 }

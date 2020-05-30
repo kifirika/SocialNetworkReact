@@ -1,40 +1,59 @@
+.allUsersBlock {
+    display: flex;
+    width: 800px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px;
+    margin: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #FFffff;
+    border-radius: 4px;
+}
 .userBlock{
     display: flex;
-    align-items: stretch;
-    justify-content: stretch;
-    border-bottom: 1px solid rgb(211, 211, 211);  
+    flex-direction: column;
+    width: 245px;
+    border-top: 1px solid rgb(211, 211, 211);
+    border-bottom: 1px solid rgb(211, 211, 211);
     padding: 10px;
 }
-.userPhotoBlock{
-    width: 150px;
+.userBlock:nth-child(2),
+.userBlock:nth-child(5),
+.userBlock:nth-child(8){
+    border-left: 1px solid rgb(211, 211, 211);
+    border-right: 1px solid rgb(211, 211, 211);
+}
+.userBlock:nth-child(3n){
+    border-right: 0;
 }
 .usersPhoto {
-    width: 100px;
-    height: 100px;
+    display: block;
+    width: 150px;
+    height: 150px;
     border-radius: 100px;
+    margin: 0 auto;
 }
 .nameBlock {
-    padding-top: 25px;
-    width: 400px;
-    align-items: center;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
 }
 .locationBlock {
     padding-top: 10px;
-    width: 150px;
-    align-items: center;
 }
 .followButtonBlock{
     padding-top: 10px;
 }
-.paginationBlock{
-    display: flex;
-    margin: 9px;
+.followButtonBlock button{
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #4a76a8;
     padding: 10px;
-    border: 1px solid;
-    justify-content: space-around;
-}
-.selectedPage{
-    font-weight: 600;
+    background-color: #4a76a8;
+    margin: 0 auto;
+    color: #c9eeff;
 }
 a {
     text-decoration: none;

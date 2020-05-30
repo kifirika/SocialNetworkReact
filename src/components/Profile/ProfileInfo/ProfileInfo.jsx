@@ -27,13 +27,23 @@ const ProfileInfo = (props) => {
 
                     <div className={s.profileDescription}>
                         <div className={s.nameBlock}>
-                            {/* <h1>Salem Saberhagen</h1> */}
                             <h1 className={s.pageName}>{props.profile.fullName}</h1>
                             <ProfileStatusHooks status={props.status} updateStatus={props.updateStatus}/>
                         </div>
 
                         
-                        <div className='profile-description'>
+                        <div className={s.profileDescriptionBlock}>
+                            <div>
+                                <div>
+                                    <span>Birthday:</span><span className={s.birthDay}> 11 may</span>
+                                </div>
+                                <div>
+                                    <span>City: </span><span className={s.birthCity}>Karakol</span>
+                                </div>
+                                <div>
+                                    <span>Family status: </span><span className={s.married}>Not married</span>
+                                </div>
+                            </div>
                             <span>Contacts:
                                 <div>{props.profile.contacts.vk}</div>
                                 <div>{props.profile.contacts.facebook}</div>

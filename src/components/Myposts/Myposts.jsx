@@ -38,7 +38,7 @@ const NewPostForm = (props) => {
             <div className={s.areaPlusButton}>
                 <img className={s.avaImage} src={'https://i.pinimg.com/736x/60/69/d5/6069d5dcde2d621fa89bc32b4108115a.jpg'}/>
                 <Field component='textarea' name='newPostBody' placeholder='Что нового?'/>
-                <button><b>+</b></button>
+                <button>Add post</button>
             </div>
         </form>
     )

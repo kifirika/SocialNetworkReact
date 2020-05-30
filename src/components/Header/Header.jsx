@@ -10,19 +10,27 @@ const Header = (props) => {
 			<div>
 			{
 			props.isAuth ? 
-			<div className={s.loginBlock}>				
+			<div className={s.loginBlock}>
+
+				<div>
+					<button className={s.loginButton} onClick={props.logout}>Logout</button>
+				</div>
+				<div>
+					{props.login}
+				</div>
+				<div className={s.avaLoginBlock}>
 					{!props.profile &&
-						<span>No photo</span>
+					<span>No photo</span>
 					}
 					{props.profile &&
 					<div>
 						<img className={s.miniAvaLoginBlock} src={props.profile.photos.small}/>
-					</div>	
+					</div>
 					}
-					{props.login}
-				<div>
-					<button className={s.loginButton} onClick={props.logout}>Logout</button>
 				</div>
+
+
+
 			</div>  
 			: <NavLink to={'/login'}>Login</NavLink>
 			}	

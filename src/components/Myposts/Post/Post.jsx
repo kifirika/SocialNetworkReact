@@ -7,7 +7,7 @@ const Post = (props) => {
         <img className={s.postImage} src='https://i.pinimg.com/736x/60/69/d5/6069d5dcde2d621fa89bc32b4108115a.jpg'/>
             <div className={s.textPost}>
                 <div>
-                    <span className={s.postName}>Salem</span>
+                    <span className={s.postName}>Kifo</span>
                 </div>
                 <div>
                     <span>{props.message}</span>

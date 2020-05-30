@@ -1,21 +1,42 @@
 import React from 'react';
 import s from './Dialogs.module.css';
 import { NavLink, Redirect } from 'react-router-dom';
-import { sendMessageCreator, updateNewMessageTextCreator } from '../../redux/messagesReducer';
 import { Field, reduxForm, reset } from 'redux-form';
+import ava from '../../assets/ava.jpg'
+import defaultUser from '../../assets/avadef.jpg'
 
 const DialogItem = (props) => {
     let path = '/dialogs/' + props.id;
     return (
         <div className={s.dialog}>
-            <NavLink to={path}>{props.name}</NavLink>
+            <div>
+                <img src={defaultUser}/>
+            </div>
+            <div className={s.dialogsUserName}>
+                <NavLink to={path}>{props.name}</NavLink>
+            </div>
+
         </div>
     )
 };
 
 const Message = (props) => {
     return (
-        <div className={s.message}>{props.message}</div>
+
+        <div className={s.message}>
+            <div className={s.messageAva}>
+                <img src={ava}/>
+            </div>
+            <div className={s.messageBody}>
+                <div className={s.messageName}>
+                    <span>Kifo</span>
+                </div>
+                <div>
+                    {props.message}
+                </div>
+            </div>
+
+        </div>
     )
 };
 
@@ -37,10 +58,16 @@ const Dialogs = (props) => {
 
     return (
         <div className={s.dialogs}>
-            <div className={s.messagesItem}>
-                {messagesElements}
-                <AddMessageFormRedux onSubmit={addNewMessage}/>     
+            <div>
+                <div className={s.messagesItem}>
+                    {messagesElements}
+                </div>
+                <div>
+                    <AddMessageFormRedux onSubmit={addNewMessage}/>
+                </div>
             </div>
+
+
             <div className={s.dialogsItem}>
                 {dialogsElements}
             </div>
@@ -58,7 +85,7 @@ const AddMessageForm = (props) => {
         <form onSubmit={props.handleSubmit}>
             <div className={s.messagesAreaPlusButton}>
                 <Field component='textarea' name='newMessageBody' placeholder='Введите сообщение'/>
-                <button></button>
+                <button>Send</button>
             </div>
         </form>
     )

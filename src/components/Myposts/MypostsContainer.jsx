@@ -17,7 +17,6 @@ class MypostsContainer extends React.Component {
         }
     }
     render() {
-        debugger
         return <Myposts {...this.props} />
     }
     

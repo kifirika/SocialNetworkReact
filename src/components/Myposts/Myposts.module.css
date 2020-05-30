@@ -22,15 +22,11 @@
     border-radius: 50%;
 }
 .mainContentPosts button {
-    margin-left: 15px;
-    background-color: hsla(203, 88%, 53%, 0.911);
-    border-radius: 30px;
-    width: 30px;
+    background-color: #4a76a8;
+    border-radius: 5px;
+    width: 70px;
     height: 30px;
     border: 1px solid #fff;
-}
-.mainContentPosts button:hover{
-    background-color: hsl(203, 88%, 53%);
 }
 .mainContentPosts button:focus{
     outline: none;  

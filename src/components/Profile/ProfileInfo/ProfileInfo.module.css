@@ -30,6 +30,7 @@
 }
 .nameBlock {
     border-bottom: 1px solid #e7e8ec;
+    padding-bottom: 15px;
 }
 .pageName{
     font-size: 19px;
@@ -40,4 +41,19 @@
     overflow: hidden;
     text-overflow: ellipsis;
     color: #000;
+}
+.profileDescriptionBlock{
+    padding-top: 15px;
+}
+.birthDay{
+    padding-left: 120px;
+    color: #4a76a8;
+}
+.birthCity{
+    padding-left: 146px;
+    color: #4a76a8;
+}
+.married{
+    padding-left: 94px;
+    color: #4a76a8;
 }
