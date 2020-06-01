@@ -57,3 +57,32 @@
     padding-left: 94px;
     color: #4a76a8;
 }
+.addPhoto input{
+    padding-top: 35px;
+    width: 200px;
+}
+.formAddInfo {
+    display: flex;
+}
+.fullname{
+    padding-left: 110px;
+}
+.sdat{
+    padding-left: 96px;
+}
+.skills{
+    padding-left: 139px;
+}
+.about{
+    padding-left: 110px;
+}
+.vk{
+    padding-left: 155px;
+}
+.github{
+    padding-left: 130px;
+}
+.editDataButton,
+.saveDataButton{
+    padding-top: 10px;
+}

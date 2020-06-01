@@ -3,7 +3,8 @@ import { profileAPI } from "../api/api";
 const   ADD_POST = 'ADD-POST',
         SET_USER_PROFILE = 'SET_USER_PROFILE',
         TOGGLE_IS_FETCHING = 'TOGGLE_IS_FETCHING',
-        SET_STATUS = 'SET_STATUS';
+        SET_STATUS = 'SET_STATUS',
+        SAVE_PHOTO_SUCCESS = 'SAVE_PHOTO_SUCCESS';
 
 let initialState = {
 
@@ -45,6 +46,11 @@ const profileReducer = (state = initialState, action) => {
                 ...state,
                 status: action.status
             }
+        }case SAVE_PHOTO_SUCCESS: {
+            return {
+                ...state,
+                profile: {...state.profile, photos: action.photos}
+            }
         }
         default: 
             return state;
@@ -63,6 +69,11 @@ export const setUserProfile = (profile) => {
     return {
         type: SET_USER_PROFILE,
         profile
+    };
+};export const sevePhotoSeccess = (photos) => {
+    return {
+        type: SAVE_PHOTO_SUCCESS,
+        photos
     };
 };
 export const toggleIsFetching = (isFetching) => {
@@ -91,6 +102,19 @@ export const updateStatus = (status) => async(dispatch) => {
     let response = await profileAPI.updateStatus(status);
     if (response.data.resultCode === 0) {
         dispatch(setStatus(status));
+    }
+};
+export const savePhoto = (file) => async(dispatch) => {
+    let response = await profileAPI.savePhoto(file);
+    if (response.data.resultCode === 0) {
+        dispatch(sevePhotoSeccess(response.data.data.photos));
+    }
+};
+export const saveDataProfile = (profile) => async(dispatch, getState) => {
+    const userId = getState().auth.userId;
+    let response = await profileAPI.saveProfile(profile);
+    if (response.data.resultCode === 0) {
+        dispatch(getUserProfile(userId));
     }
 };
 
