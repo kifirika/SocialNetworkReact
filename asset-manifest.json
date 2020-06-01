@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/kifirika/SocialNetworkReact/static/css/main.785200e9.chunk.css",
+    "main.js": "/kifirika/SocialNetworkReact/static/js/main.8a8200b1.chunk.js",
+    "main.js.map": "/kifirika/SocialNetworkReact/static/js/main.8a8200b1.chunk.js.map",
+    "runtime-main.js": "/kifirika/SocialNetworkReact/static/js/runtime-main.c3de7b28.js",
+    "runtime-main.js.map": "/kifirika/SocialNetworkReact/static/js/runtime-main.c3de7b28.js.map",
+    "static/js/2.f03dd574.chunk.js": "/kifirika/SocialNetworkReact/static/js/2.f03dd574.chunk.js",
+    "static/js/2.f03dd574.chunk.js.map": "/kifirika/SocialNetworkReact/static/js/2.f03dd574.chunk.js.map",
+    "index.html": "/kifirika/SocialNetworkReact/index.html",
+    "precache-manifest.93e60b5bea701e43d7e30c42ec848081.js": "/kifirika/SocialNetworkReact/precache-manifest.93e60b5bea701e43d7e30c42ec848081.js",
+    "service-worker.js": "/kifirika/SocialNetworkReact/service-worker.js",
+    "static/css/main.785200e9.chunk.css.map": "/kifirika/SocialNetworkReact/static/css/main.785200e9.chunk.css.map",
+    "static/js/2.f03dd574.chunk.js.LICENSE.txt": "/kifirika/SocialNetworkReact/static/js/2.f03dd574.chunk.js.LICENSE.txt",
+    "static/media/Ripple-1s-150px.svg": "/kifirika/SocialNetworkReact/static/media/Ripple-1s-150px.482076b1.svg",
+    "static/media/ava.jpg": "/kifirika/SocialNetworkReact/static/media/ava.82b23df9.jpg",
+    "static/media/avadef.jpg": "/kifirika/SocialNetworkReact/static/media/avadef.7abc474b.jpg",
+    "static/media/logo.png": "/kifirika/SocialNetworkReact/static/media/logo.b3c46df9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c3de7b28.js",
+    "static/js/2.f03dd574.chunk.js",
+    "static/css/main.785200e9.chunk.css",
+    "static/js/main.8a8200b1.chunk.js"
+  ]
+}
